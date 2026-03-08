@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiki Ardri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+  <div class="wiki-shell">
+    <header class="wiki-hero">
+      <p class="eyebrow">Wiki officiel</p>
+      <h1>Ardri</h1>
+      <p class="hero-copy">
+        Tout ce qu'il faut savoir sur le royaume, ses lieux, ses dangers et ses mecanismes.
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="index.html">Retour au site</a>
+        <a class="button button-secondary" href="jeu_maison.py">Lancer le jeu</a>
+      </div>
+    </header>
+
+    <main class="wiki-layout">
+      <aside class="wiki-summary">
+        <h2>Sommaire</h2>
+        <nav>
+          <a href="#overview">Overview</a>
+          <a href="#locations">Locations</a>
+          <a href="#places">Places</a>
+          <a href="#items">Items</a>
+          <a href="#mobs">Mobs</a>
+          <a href="#bosses">Bosses</a>
+          <a href="#quests">Quests</a>
+          <a href="#commands">Commands</a>
+        </nav>
+      </aside>
+
+      <div class="wiki-content">
+        <section class="wiki-panel" id="overview">
+          <h2>Overview</h2>
+          <p>
+            Ardri est un jeu d'aventure textuel medieval et gothique. Le joueur s'echappe d'une prison, explore le royaume, collecte du butin et gagne en puissance jusqu'au combat final.
+          </p>
+          <ul>
+            <li><strong>Objectif</strong> - survivre, monter en niveau et renverser l'Ashen Tyrant</li>
+            <li><strong>Palier roi</strong> - la quete du roi commence au niveau 10</li>
+            <li><strong>Palier invocations</strong> - les boss d'autel demandent le niveau 15</li>
+            <li><strong>Sauvegarde</strong> - la progression est stockee dans <strong>savegame.json</strong></li>
+          </ul>
+        </section>
+
+        <section class="wiki-panel" id="locations">
+          <h2>Locations</h2>
+          <ul>
+            <li><strong>Prison</strong> - point de depart et premiere evasion</li>
+            <li><strong>City</strong> - centre de progression et de commerce</li>
+            <li><strong>World Map</strong> - relie villes, villages et zones sauvages</li>
+            <li><strong>Village</strong> - escale secondaire dans les terres</li>
+            <li><strong>Forest</strong> - zone de chasse et de danger</li>
+            <li><strong>Cave</strong> - ennemis plus resistants et butin superieur</li>
+            <li><strong>Dungeon</strong> - zone tardive avec gros risques et recompenses</li>
+          </ul>
+          <div class="stat-block">
+            <h3>Random names used by the game</h3>
+            <ul>
+              <li><strong>Cities</strong> - Jourda, Velm, Corven, Eldhame, Rith, Norwyn</li>
+              <li><strong>Villages</strong> - Willowfen, Brindle, Oakrest, Fenmere, Ashby</li>
+              <li><strong>Forests</strong> - Whisperwood, Blackpine, Mossgrove, Greenthorn</li>
+              <li><strong>Caves</strong> - Old Man's Cave, Hollow Fang, Moon Hollow, Stone Maw</li>
+              <li><strong>Dungeons</strong> - Sunken Vault, Iron Depths, Grimhold, Broken Crypt</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="wiki-panel" id="places">
+          <h2>Places</h2>
+          <ul>
+            <li><strong>Castle of Ardri</strong> - coeur politique du royaume</li>
+            <li><strong>Armorer</strong> - achat d'armures et d'equipement defensif</li>
+            <li><strong>Merchant Stall</strong> - commerce general et revente du butin</li>
+            <li><strong>Tavern</strong> - quetes secondaires et contrats</li>
+            <li><strong>Ritual Circle</strong> - invocation des combats speciaux</li>
+            <li><strong>Summon Arena</strong> - arene reservee aux boss invoques</li>
+          </ul>
+        </section>
+
+        <section class="wiki-panel" id="items">
+          <h2>Items</h2>
+          <div class="stat-block">
+            <h3>Weapons</h3>
+            <ul>
+              <li><strong>Shiv</strong> - damage 5 a 8, vente 10</li>
+              <li><strong>Iron Sword</strong> - damage 7 a 11, achat 30, vente 15</li>
+              <li><strong>Steel Sword</strong> - damage 10 a 14, achat 65, vente 33</li>
+              <li><strong>War Axe</strong> - damage 12 a 17, achat 95, vente 48</li>
+              <li><strong>Silver Blade</strong> - damage 10 a 15, vente 60</li>
+              <li><strong>King's Blade</strong> - damage 18 a 24, vente 160</li>
+              <li><strong>Voidfang</strong> - damage 22 a 28, vente 320</li>
+            </ul>
+          </div>
+          <div class="stat-block">
+            <h3>Armor</h3>
+            <ul>
+              <li><strong>Leather Armor</strong> - armor 1, achat 24, vente 12</li>
+              <li><strong>Chain Armor</strong> - armor 2, achat 55, vente 28</li>
+              <li><strong>Scale Armor</strong> - armor 3, achat 78, vente 39</li>
+              <li><strong>Warden Plate</strong> - armor 4, vente 75</li>
+              <li><strong>Royal Mail</strong> - armor 5, achat 135, vente 68</li>
+              <li><strong>Ashen Crown</strong> - armor 7, vente 180</li>
+              <li><strong>Astral Bulwark</strong> - armor 10, vente 340</li>
+            </ul>
+          </div>
+          <div class="stat-block">
+            <h3>Potions</h3>
+            <ul>
+              <li><strong>Small Potion</strong> - heal 12, achat 10, vente 5</li>
+              <li><strong>Large Potion</strong> - heal 25, achat 22, vente 11</li>
+              <li><strong>Greater Potion</strong> - heal 45, achat 40, vente 20</li>
+              <li><strong>Sun Tonic</strong> - heal 80, achat 70, vente 35</li>
+            </ul>
+          </div>
+          <div class="stat-block">
+            <h3>Reagents and key items</h3>
+            <ul>
+              <li><strong>Ember Heart</strong> - reagent rare, vente 18</li>
+              <li><strong>Grave Dust</strong> - reagent rare, vente 16</li>
+              <li><strong>Moon Fang</strong> - reagent rare, vente 22</li>
+              <li><strong>Titan Shard</strong> - reagent rare, vente 26</li>
+              <li><strong>Cell Key</strong> - objet de fuite, vente 0</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="wiki-panel" id="mobs">
+          <h2>Mobs</h2>
+          <div class="stat-block">
+            <h3>Forest</h3>
+            <ul>
+              <li><strong>Wild Boar</strong> - HP 12, degats 4, XP 4, or 4, drops: small potion, ember heart</li>
+              <li><strong>Forest Wolf</strong> - HP 14, degats 5, XP 5, or 5, drops: shiv, small potion, moon fang</li>
+              <li><strong>Thorn Lynx</strong> - HP 17, degats 6, XP 6, or 7, drops: large potion, leather armor, moon fang</li>
+            </ul>
+          </div>
+          <div class="stat-block">
+            <h3>Cave</h3>
+            <ul>
+              <li><strong>Cave Fang</strong> - HP 18, degats 6, XP 7, or 7, drops: small potion, leather armor, greater potion, ember heart</li>
+              <li><strong>Stone Crawler</strong> - HP 20, degats 7, XP 8, or 8, drops: iron sword, large potion, steel sword, titan shard</li>
+              <li><strong>Tunnel Reaver</strong> - HP 24, degats 9, XP 10, or 10, drops: chain armor, greater potion, titan shard</li>
+            </ul>
+          </div>
+          <div class="stat-block">
+            <h3>Dungeon</h3>
+            <ul>
+              <li><strong>Bone Warden</strong> - HP 22, degats 7, XP 10, or 10, drops: small potion, large potion, grave dust</li>
+              <li><strong>Cave Stalker</strong> - HP 24, degats 8, XP 11, or 11, drops: shiv, small potion, steel sword, titan shard</li>
+              <li><strong>Ash Rat</strong> - HP 18, degats 6, XP 8, or 8, drops: large potion, greater potion, ember heart</li>
+              <li><strong>Grave Knight</strong> - HP 28, degats 10, XP 14, or 16, drops: chain armor, scale armor, greater potion, grave dust</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="wiki-panel" id="bosses">
+          <h2>Bosses</h2>
+          <div class="stat-block">
+            <h3>Final boss</h3>
+            <ul>
+              <li><strong>Ashen Tyrant</strong> - HP 95, degats 16, XP 80, or 180, drops: ashen crown, greater potion, sun tonic</li>
+            </ul>
+          </div>
+          <div class="stat-block">
+            <h3>Summon bosses</h3>
+            <ul>
+              <li><strong>Astral Colossus</strong> - HP 105, degats 18, XP 90, or 140, drops: greater potion, titan shard, rare drop: astral bulwark, invocation: ember heart x2, grave dust x2, titan shard x1</li>
+              <li><strong>Void Seraph</strong> - HP 98, degats 20, XP 90, or 140, drops: sun tonic, moon fang, rare drop: voidfang, invocation: moon fang x2, ember heart x1, titan shard x2</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="wiki-panel" id="quests">
+          <h2>Quests</h2>
+          <ul>
+            <li><strong>Tavern Hunt</strong> - niveau 1, tuer 3 monstres de foret, recompenses: 30 or, 12 XP, large potion</li>
+            <li><strong>Cave Contract</strong> - niveau 1, tuer 3 monstres de cave, recompenses: 55 or, 18 XP, steel sword</li>
+            <li><strong>Delver's Wager</strong> - niveau 7, ouvrir 1 coffre de donjon, recompenses: 90 or, 24 XP, scale armor</li>
+          </ul>
+        </section>
+
+        <section class="wiki-panel" id="commands">
+          <h2>Commands</h2>
+          <ul>
+            <li><strong>z q s d</strong> - se deplacer</li>
+            <li><strong>e / interact</strong> - interagir avec un lieu ou un objet</li>
+            <li><strong>attack</strong> - attaquer</li>
+            <li><strong>flee</strong> - tenter de fuir un combat</li>
+            <li><strong>inventory</strong> - voir l'inventaire</li>
+            <li><strong>equip</strong> - equiper un objet</li>
+            <li><strong>unequip</strong> - retirer un equipement</li>
+            <li><strong>potion</strong> - utiliser une potion</li>
+            <li><strong>buy / sell</strong> - acheter ou vendre chez les marchands</li>
+            <li><strong>stats / money / look / help</strong> - afficher les infos utiles</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="transition.js"></script>
+</body>
+</html>
